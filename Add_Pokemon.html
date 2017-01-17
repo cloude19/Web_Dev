@@ -1,0 +1,57 @@
+<html>
+	<head>
+	<!--Link css sheet -->
+		<link rel="stylesheet" type="text/css" href="Poke_Style.css"/>
+		<!--changes tab Icon for site by first using rel icon as the relationsip type then href for the reference -->
+		<link rel="icon" href="http://localhost:8080/Assets/Img/Icons/188915-pokemon-go/ico/star-1.ico" type=image/ico /> 
+		
+		<script type="text/javascript" src="Widget_Test.js"></script>
+		
+		<meta charset ="UTF-8" /> <!--signifes the character set which will be used or alphabet in other words ie: english -->
+		<title> Html5 Pratice[Pokemon] </title>
+	
+		<meta name="PokemonViewer" content="Main page for javascript widget" />
+		
+		<!-- Meta data containg keywords would go here -->
+		<base href="http://localhost:8080/Add_Pokemon/"/>
+	</head>
+	<body>
+		<div id="frontp">
+			<header>
+				<a href="http://localhost:8080/PokeWiki.html">
+				<img id="mainlogo" alt="Pokemonlogo"
+				src="http://localhost:8080/Assets/Img/Borders/logo.png" width="800px"/>
+				<hr>
+				</a>
+				<h1 class="title">PokeWiki</h1>
+			</header>
+			<div id="F_Catch_Chance" class="button_border" style="margin: 10px 10px 10px 10px; width: 1000px ">
+				<h1 class="title"  style="text-align: left">Catch Chance</h1>
+				<hr>
+				<!--Catch chance function-->
+				<h2>Rate: 0-100 &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Balltype &nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Method </h2>
+				<input id="Catch_Rate" name="Catch" value="0">
+				
+				<input id="Ball_mod" list="balls" name="Catch" value="Poke">
+					<datalist id="balls">
+						<option value="Poke">
+						<option value="Great">
+						<option value="Ultra">
+						<option value="Master">
+						<option value="Safaria">
+					</datalist>
+				
+				<input id="Method" list="Methods" name="Catch" value="Ice">
+					<datalist id="Methods">
+						<option value="Ice">
+						<option value="Fire">
+						<option value="Thunder">
+					</datalist>
+				<input input type="submit" onclick="CatchRate()">
+				<!--Catch chance End-->
+			</div>
+			<button id="ClickMe" onclick="myFunction()">clickme</button> <!--Test-->
+		</div>
+		<footer align="center">CopyRight: 3099</footer> <!--Make sure to change this if this is ever put on a live server-->
+	</body>
+</html>

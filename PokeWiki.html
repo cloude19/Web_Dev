@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Link css sheet -->
+		<link rel="stylesheet" type="text/css" href="Poke_Style.css"/>
+		<!--changes tab Icon for site by first using rel icon as the relationsip type then href for the reference -->
+		<link rel="icon" href="http://localhost:8080/Assets/Img/Icons/188915-pokemon-go/ico/star-1.ico" type=image/ico /> 
+
+		<meta charset ="UTF-8" /> <!--signifes the character set which will be used or alphabet in other words ie: english -->
+		<title> Html5 Pratice[Pokemon] </title>
+	
+		<meta name="PokemonViewer" content="Pokemon site created for pratice with various web designing tools. site functions as a way to view pokemon information 
+		from a data base with animations representings functions in html or CSS along with some javascript." />
+		
+		<!-- Meta data containg keywords would go here -->
+		
+		<base href="http://localhost:8080/PokeWiki.html/"/> <!--Home location-->
+		
+	</head>
+	<body>
+		<div id="frontp">
+			<header>
+				<a href="http://localhost:8080/PokeWiki.html">
+				<img id="mainlogo" alt="Pokemonlogo"
+				src="http://localhost:8080/Assets/Img/Borders/logo.png" width="800px"/>
+				<hr>
+				</a>
+				<h1 class="title">PokeWiki</h1>
+			</header>
+			<div class="button_border" style="margin: 5px 10px 10px 1000px">
+				<a href="http://localhost:8080/Add_Pokemon.html"><button class="button" style="margin: 10px 10px 25px 0px">Add Pokemon</button></a>
+				<button class="button" style="margin: -10px 10px 25px 0px">Pokemon list</button>
+				<a href="http://localhost:8080/FAQ.html"><button class="button" style="margin: -10px 10px 25px 0px"><abbr title="Frequently Asked Questions">FAQ</abbr></button></a>
+			</div>
+			<div class="button_border" style="height: 200px; width: 700px; margin: -230px 10px 10px 10px">
+			<h1 class="title">Welecome</h1>
+			<hr>
+			<p><img id="pikacontruct" width="80px" height="70px" align="left" src="http://localhost:8080/Assets/gif/pikachu_under_construction.gif-c200"/>
+			Please ignore any glitches that may occure of the site
+			it's still under construction thank you. Also if a link is
+			broken it most likely has not been made yet.</p>
+			</div>
+			<div class="button_border" style="margin: 150px 0px 0px 10px; width:700px">
+			<h1 class="title">News</h1>
+			<hr>
+			<p>Here's where the news would, if we had any.</p>
+			</div>
+		</div>
+		<footer align="center">CopyRight: 3099</footer> <!--Make sure to change this if this is ever put on a live server-->
+	</body>
+	<?php // Is valid php code [Cant be red witin an html file without addtional tags]
+	$y = 0;
+	$number = 5;
+	$username = "\nroy\n";
+	$username .= $number;
+	echo $username;
+	if ($y-- == 0) echo $y;
+	
+	$author = "Troy Calvert";
+	
+	$example = <<<_Example
+	This is just a simple example of how to use this statment for text.
+	\nit's rather intresting as this surpasses some of the limiting tech-
+	iques of C++. In all honestly this is pretty cool. \nAlso as i just
+	discovered indentation is a thing when trying to end this statment.
+	
+	- $author.
+_Example;
+	
+	echo $example . "this is the example";
+	?>
+</html>

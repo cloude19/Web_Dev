@@ -1,0 +1,82 @@
+/*Class*/
+.title {
+    color: navy;
+    text-align: center;
+	text-shadow: 0 0 5px darkblue;
+}
+
+/*Create button class*/
+.button{
+	border-radius: 4px; /*smooth edges around border*/
+	background-color: #00D360;
+	border: none;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	padding:10px; /*Amount of surronding background around text*/
+	width: 150px; /*Width of Box*/
+	height: 50px;
+	transition: width 2s, height 2s, font-size 2s;
+	cursor: pointer; /*effect what the cursor will turn into when on the button*/
+	margin: auto; /*distance from other objects ie: physical position*/	
+}
+
+.button:hover{
+	width: 180px;
+	height: 70px;
+	font-size: 22px;
+}
+/*End Create button class*/
+
+
+.button_border{
+	border-radius: 8px;
+	border: 1px solid #009ED3; /*outline*/
+	width: 200px;
+	height: 230px;
+	background-color: #C1E3F5;
+	margin: auto;
+	display: block;
+	box-shadow: 2px 2px 5px black; /*adds hor and ver size then blue and color*/
+	/*overflow: scroll;*/
+}
+
+/*ID's/Declarations*/
+
+body {
+	background-image: url(http://localhost:8080/Assets/Img/BG/pokefig2.gif); /*To be replaced with an image*/
+	background-repeat: no-repeat;
+    background-attachment: fixed; /*No scroll*/
+	background-size: cover;
+}
+
+div#frontp{
+	margin: auto;
+	background: rgba(202,205,206,0.8); /*Gray*/
+	width: 1300px;
+	height: 1000px;
+	box-shadow: 0px 0px 15px darkblue;
+	/*opacity: 1; Could not be used due to it changing the opacity of all the content in the div*/ 
+	overflow: scroll;
+}
+
+p{
+	color: navy;
+	font-size: 20px;
+	font-family: arial;
+}
+
+h2{
+	color: navy;
+	font-size: 15px;
+	font-family: arial;
+}
+
+ul{
+	color: navy;
+	font-size: 20px;
+	font-family: arial;
+	text-align: left;
+}
+
+
